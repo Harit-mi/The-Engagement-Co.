@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-punk-black: #050505;
+    --color-punk-paper: #F5F5F0;
+    --color-punk-magenta: #FF00FF;
+    --color-punk-cyan: #00FFFF;
+    --color-gold: #C8A165;
+
+    --font-display: 'Anton', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --image-grain: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWx0ZXI9InVybCgjbm9pc2UpIiBvcGFjaXR5PSIwLjM1Ii8+PC9zdmc+');
+}
+
+@layer utilities {
+    .clip-path-tear {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    }
+
+    .clip-path-tear-top {
+        clip-path: polygon(0 15%, 50% 0, 100% 15%, 100% 100%, 0 100%);
+    }
+
+    .rot-180 {
+        transform: rotate(180deg);
+    }
+
+    .text-stroke {
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+    }
+}
+
+body {
+    background-color: #050505;
+    cursor: crosshair;
+    /* Stylistic choice */
+}
